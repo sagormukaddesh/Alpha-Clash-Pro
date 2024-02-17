@@ -16,24 +16,27 @@
 </head>
 
 <body
-    class="container mx-auto flex  min-h-screen bg-[#010313] text-white bg-[url(images/background.png)] bg-no-repeat  bg-center ">
+    class="container mx-auto flex justify-center  min-h-screen bg-[#010313] text-white bg-[url(images/background.png)] bg-no-repeat  bg-center ">
 
     <!-- home screen  -->
     <section id="home-screen" class="mx-auto   flex flex-col text-center justify-center items-center content-center">
-        <h1 class="text-white text-7xl mb-4 font-bold uppercase">ALPHABET CLASH</h1>
-        <p class="text-2xl font-semibold my-8"> Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-        <button onclick="play()"
-            class="btn btn-warning border-none h-16 w-40 bg-rose-500 text-white text-2xl font-semibold ">PLAY
-            NOW</button>
+        <div class="mx-6">
+            <h1 class="text-white text-7xl mb-4 font-bold uppercase">ALPHABET CLASH</h1>
+            <p class="text-2xl font-semibold my-8"> Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+            <button onclick="play()"
+                class="btn btn-warning border-none h-16 w-40 bg-rose-500 text-white text-2xl font-semibold ">PLAY
+                NOW</button>
+        </div>
     </section>
 
     <!-- play Ground start  -->
     <section id="play-ground" class="play-ground flex flex-col mx-auto justify-center gap-10 hidden">
         <!-- screen  -->
         <div
-            class="artboard text-black  artboard-horizontal phone-6 border-[16px] rounded-2xl  border-[#010313CC] bg-[#FFFFFFB3] ">
+            class="artboard text-black  ;g:artboard-horizontal lg:phone-6 border-[10px] lg:border-[16px] rounded-2xl  border-[#010313CC] bg-[#FFFFFFB3] ">
             <div class="flex justify-center">
-                <p class="text-2xl text-white px-6 py-3 font-semibold rounded-b-2xl  bg-stone-600 ">Don't watch keyboard
+                <p class=" text-xl lg:text-2xl text-white lg:px-6; lg:py-3 font-semibold rounded-b-2xl  bg-stone-600 ">
+                    Don't watch keyboard
                     while playing...</p>
             </div>
             <div class="flex justify-center items-center ">
@@ -41,8 +44,8 @@
             </div>
         </div>
         <!-- keyboard start -->
-        <div class="text-black text-2xl font-bold">
-            <div class="flex justify-center gap-1 my-1 w-full">
+        <div class="text-black lg:text-2xl mx-auto font-bold">
+            <div class="flex justify-center gap-1 mx-2 my-1 lg:w-full">
                 <kbd id="q" class="kbd">q</kbd>
                 <kbd id="w" class="kbd">w</kbd>
                 <kbd id="e" class="kbd">e</kbd>
@@ -54,7 +57,7 @@
                 <kbd id="o" class="kbd">o</kbd>
                 <kbd id="p" class="kbd">p</kbd>
             </div>
-            <div class="flex justify-center gap-1 my-1 w-full">
+            <div class="flex justify-center gap-1 mx-2 my-1 lg:w-full">
                 <kbd id="a" class="kbd">a</kbd>
                 <kbd id="s" class="kbd">s</kbd>
                 <kbd id="d" class="kbd">d</kbd>
@@ -65,7 +68,7 @@
                 <kbd id="k" class="kbd">k</kbd>
                 <kbd id="l" class="kbd">l</kbd>
             </div>
-            <div class="flex justify-center gap-1 my-1 w-full">
+            <div class="flex justify-center gap-1 my-1 mx-2 lg:w-full">
                 <kbd id="z" class="kbd">z</kbd>
                 <kbd id="x" class="kbd">x</kbd>
                 <kbd id="c" class="kbd">c</kbd>
@@ -105,12 +108,12 @@
     </section>
 
     <!-- final score restart  -->
-    <section id="restart-game" class="score flex justify-center items-center text-center  border w-full hidden">
-        <div class="space-y-8 bg-[#ffffff6c] p-4 rounded-lg bg-gradient-to-r from-rose-500 to-fuchsia-500">
-            <h1 class="text-8xl cl">
-                <span class="font-bold">SCORE:</span > <span id="final-score">14</span>
+    <section id="restart-game" class="score flex  justify-center items-center text-center  border  lg:w-full hidden">
+        <div class="space-y-8 bg-[#ffffff6c] mx-4 p-4 rounded-lg bg-gradient-to-r from-rose-500 to-fuchsia-500">
+            <h1 class="text-6xl lg:text-8xl cl">
+                <span class="font-bold ">SCORE:</span> <span id="final-score">14</span>
             </h1>
-            <button onclick="play()" class="btn text-4xl font-bold  h-16">Play Again</button>
+            <button onclick="play()" class="btn text-2xl lg:text-4xl font-bold  h-16">Play Again</button>
             <p class="text-3xl font-bold">Practice will make you a pro</p>
         </div>
     </section>
